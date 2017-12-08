@@ -27,7 +27,10 @@ class String
   end
 
   def count_sentences
-    self.split(/[.?!]/)
-    binding.pry
+    sentence_count = 0
+    setnences = self.split(/[.?!]/)
+    sentences.each {|s| sentence_count += 1 if s != ""}
+    sentence_count
   end
+  
 end
