@@ -28,9 +28,9 @@ class String
 
   def count_sentences
     sentence_count = 0
-    setnences = self.split(/[.?!]/)
+    sentences = self.split(/[.?!]/)
     sentences.each {|s| sentence_count += 1 if s != ""}
     sentence_count
   end
-  
+
 end
